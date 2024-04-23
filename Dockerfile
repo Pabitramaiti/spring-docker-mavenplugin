@@ -1,6 +1,5 @@
 #FROM openjdk:1.8
-#FROM openjdk:17-oracle
-FROM openjdk:17-jre-slim
+FROM openjdk:17-oracle
 WORKDIR /usr/src/app
 EXPOSE 8080
 COPY --from=build /usr/src/app/target/spring-jenkins-docker-example.jar ./app.jar
