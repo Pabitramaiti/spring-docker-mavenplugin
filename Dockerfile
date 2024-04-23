@@ -2,6 +2,6 @@
 FROM openjdk:17-oracle
 WORKDIR /usr/src/app
 EXPOSE 8080
-COPY --from=build /usr/src/app/target/spring-jenkins-docker-example.jar ./app.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
+COPY target/spring-jenkins-docker-example.jar app.jar
+ENTRYPOINT ["java","-jar","app.jar"]
 #ENTRYPOINT [ "sh", "-c", "java $JAVA_OPTS -jar app.jar" ]
