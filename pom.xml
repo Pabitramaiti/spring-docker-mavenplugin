@@ -7,11 +7,11 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-jenkins-docker-example</name>
 	<description>docker jenkins integration example</description>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.1.1</version>
+		<version>3.2.5</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<properties>
